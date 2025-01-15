@@ -1,9 +1,7 @@
 # SEMPL-IT Backend
-This is the backend of the SEMPL-IT, a web app designed to simplify Italian administrative document using SLM. 
+This is the backend of the SEMPL-IT, a web app designed to simplify Italian administrative document using three different fine-tuned LLMs.
 
-The backend is built with FastAPI and interacts with three different fine-tuned language models to perform text simplification tasks. By sending data through a single POST endpoint, the backend processes the input text and simplifies it to make it more understandable for a wider audience.
-
-Check out the [frontend](https://https://github.com/VerbACxSS/semp-it-frontend) of the SEMPL-IT web app.
+Check out the [frontend](https://github.com/VerbACxSS/semp-it-frontend) of the SEMPL-IT web app.
 
 ## Getting started
 ### Pre-requisites
@@ -40,7 +38,7 @@ Start the server
 python -m uvicorn app.app:app 
 ```
 
-### Using `docker-compose`
+### Using `docker`
 Run the application using `docker compose`
 ```sh
 docker compose up --build -d
@@ -61,7 +59,7 @@ curl -X POST "http://localhost:8000/api/v1/predict/" \
 ```
 
 ## SEMPL-IT fine-tuned models
-The backend interacts with three different fine-tuned models available on Hugging Face perform text simplification tasks. The models are:
+The SEMPL-IT interacts with three different fine-tuned models available on Hugging Face perform text simplification tasks. The models are:
 * `sempl-it-mt5-small`: https://huggingface.co/VerbACxSS/sempl-it-mt5-small
 * `sempl-it-umt5-small`: https://huggingface.co/VerbACxSS/sempl-it-umt5-small
 * `sempl-it-gpt2-small-italian`: https://huggingface.co/VerbACxSS/sempl-it-gpt2-small-italian
