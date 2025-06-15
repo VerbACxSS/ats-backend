@@ -1,6 +1,6 @@
 from italian_ats_evaluator import TextAnalyzer
 
-from app.models.PredictionResponse import ReadabilityMetrics
+from ..models.PredictionResponse import ReadabilityMetrics
 
 class ReadabilityService:
     def perform_readability_analysis(self, text: str) -> ReadabilityMetrics:
