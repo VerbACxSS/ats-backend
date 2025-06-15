@@ -5,10 +5,9 @@ from pydantic import BaseModel
 
 
 class Model(str, Enum):
-    it5_small = "it5-small"
-    mt5_small = "mt5-small"
-    umt5_small = "umt5-small"
-    gpt2_small_italian = "gpt2-small-italian"
+    mt5_small = "sempl-it-mt5-small"
+    umt5_small = "sempl-it-umt5-small"
+    gpt2_small_italian = "sempl-it-gpt2-small-italian"
 
 
 class PredictionRequest(BaseModel):
