@@ -1,18 +1,19 @@
+python-dotenv==1.1.1
+
+fastapi==0.116.1
+pydantic==2.11.7
+uvicorn==0.35.0
+
+it-core-news-lg@https://github.com/explosion/spacy-models/releases/download/it_core_news_lg-3.7.0/it_core_news_lg-3.7.0-py3-none-any.whl
+italian-ats-evaluator==2.0.5
+
 numpy==1.26.4
-
-torch==2.1.2 --index-url=https://download.pytorch.org/whl
-torchaudio==2.1.2 --index-url=https://download.pytorch.org/whl
-torchvision==0.16.2 --index-url=https://download.pytorch.org/whl
-
 accelerate==0.30.1
 transformers==4.36.2
 sentencepiece==0.1.99
-
-
-fastapi==0.110.3
-pydantic==2.7.1
-uvicorn==0.29.0
-
-italian-ats-evaluator==2.0.5
-
 optimum[onnxruntime]==1.19.2
+
+--extra-index-url https://download.pytorch.org/whl/cpu
+torch==2.1.2
+torchaudio==2.1.2
+torchvision==0.16.2
